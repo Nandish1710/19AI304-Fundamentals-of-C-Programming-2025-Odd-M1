@@ -4,7 +4,7 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+# Date : 18-11-2025
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +26,24 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+    #include <stdio.h>
+
+    int main() {
+    int intLiteral = 25;
+    float floatLiteral = 10.75;
+    char charLiteral = 'A';
+    char stringLiteral[] = "Hello";
+
+    printf("Integer Literal: %d\n", intLiteral);
+    printf("Float Literal: %.2f\n", floatLiteral);
+    printf("Character Literal: %c\n", charLiteral);
+    printf("String Literal: %s\n", stringLiteral);
+
+    return 0;
+}
+
 # Output:
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +74,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+    #include <stdio.h>
+
+    #define MACRO_VALUE 100
+
+    int main() {
+    const int constVar = 50;
+
+    printf("Macro constant value: %d\n", MACRO_VALUE);
+    printf("Constant variable value: %d", constVar);
+
+    return 0;
+}
+
 # Output:
+<img width="359" height="129" alt="image" src="https://github.com/user-attachments/assets/835d7c42-79bd-40a4-8cb7-3ecd348d6e99" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +113,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+    #include <stdio.h>
+
+    int main() {
+    int a = 10;
+    float b = 12.5f;
+    double c = 45.987654;
+    char d = 'A';
+
+    printf("Integer value: %d\n", a);
+    printf("Float value: %.2f\n", b);
+    printf("Double value: %lf\n", c);
+    printf("Character value: %c", d);
+
+    return 0;
+}
+
 # Output:
+<img width="368" height="185" alt="image" src="https://github.com/user-attachments/assets/5a5f9e2e-34d6-4405-8d68-77b11e36d6f6" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +170,43 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+    #include <stdio.h>
+
+    int main() {
+    int a, b;
+
+    scanf("%d %d", &a, &b);
+
+    printf("Arithmetic Operations:\n");
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+
+    if (b != 0)
+        printf("Division: %d\n", a / b);
+    else
+        printf("Division: Undefined (division by zero)\n");
+
+    if (b != 0)
+        printf("Remainder: %d\n", a % b);
+    else
+        printf("Remainder: Undefined (division by zero)\n");
+
+    printf("\nBitwise Operations:\n");
+    printf("AND: %d\n", a & b);
+    printf("OR: %d\n", a | b);
+    printf("XOR: %d\n", a ^ b);
+    printf("Left Shift (a<<1): %d\n", a << 1);
+    printf("Right Shift (a>>1): %d\n", a >> 1);
+    printf("NOT of a: %d\n", ~a);
+    printf("NOT of b: %d\n", ~b);
+
+    return 0;
+}
+
 # Output:
+<img width="545" height="477" alt="image" src="https://github.com/user-attachments/assets/a015b53f-84ce-403f-8126-2a284d2ec452" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,6 +251,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+
 # Output:
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
