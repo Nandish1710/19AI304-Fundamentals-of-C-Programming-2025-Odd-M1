@@ -53,7 +53,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:2
   Build a C program to display the value of a macro constant and a constant variable.
-# Date : 
+# Date : 18-11-2025
 # Aim:
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
@@ -99,7 +99,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:3
   Build a C program to demonstrate the use of different data types such as int, float, double, and char, and display their values using printf().
-# Date : 
+# Date : 18-11-2025
 # Aim:
   To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
 # Algorithm:
@@ -139,7 +139,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:4
   Build a C program to perform arithmetic and bitwise operations on two integers entered by the user. The program should display: Arithmetic operations: addition, subtraction, multiplication, division, and remainder. Bitwise operations: AND, OR, XOR, left shift, right shift, and NOT.
-# Date : 
+# Date : 18-11-2025
 # Aim:
   To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
 # Algorithm:
@@ -176,37 +176,30 @@ Thus, the program was implemented and executed successfully, and the required ou
     int main() {
     int a, b;
 
+    printf("Enter two integers: ");
     scanf("%d %d", &a, &b);
 
-    printf("Arithmetic Operations:\n");
-    printf("Addition: %d\n", a + b);
-    printf("Subtraction: %d\n", a - b);
-    printf("Multiplication: %d\n", a * b);
+    printf("\n--- Arithmetic Operations ---\n");
+    printf("Sum (a + b): %d\n", a + b);
+    printf("Difference (a - b): %d\n", a - b);
+    printf("Product (a * b): %d\n", a * b);
+    printf("Quotient (a / b): %d\n", a / b);
+    printf("Remainder (a %% b): %d\n", a % b);
 
-    if (b != 0)
-        printf("Division: %d\n", a / b);
-    else
-        printf("Division: Undefined (division by zero)\n");
-
-    if (b != 0)
-        printf("Remainder: %d\n", a % b);
-    else
-        printf("Remainder: Undefined (division by zero)\n");
-
-    printf("\nBitwise Operations:\n");
-    printf("AND: %d\n", a & b);
-    printf("OR: %d\n", a | b);
-    printf("XOR: %d\n", a ^ b);
-    printf("Left Shift (a<<1): %d\n", a << 1);
-    printf("Right Shift (a>>1): %d\n", a >> 1);
-    printf("NOT of a: %d\n", ~a);
-    printf("NOT of b: %d\n", ~b);
+    printf("\n--- Bitwise Operations ---\n");
+    printf("AND (a & b): %d\n", a & b);
+    printf("OR (a | b): %d\n", a | b);
+    printf("XOR (a ^ b): %d\n", a ^ b);
+    printf("Left shift (a << b): %d\n", a << b);
+    printf("Right shift (a >> b): %d\n", a >> b);
+    printf("Bitwise NOT of a (~a): %d\n", ~a);
+    printf("Bitwise NOT of b (~b): %d\n", ~b);
 
     return 0;
 }
 
 # Output:
-<img width="545" height="477" alt="image" src="https://github.com/user-attachments/assets/a015b53f-84ce-403f-8126-2a284d2ec452" />
+<img width="498" height="474" alt="image" src="https://github.com/user-attachments/assets/ebe85282-bb6f-43aa-bf7f-30d7601765a3" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -216,7 +209,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:5
   Develop a C program to check whether a given character is a vowel, consonant, digit, or special symbol using the ternary operator.
-# Date : 
+# Date : 18-11-2025
 # Aim:
   To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
 # Algorithm:
@@ -257,23 +250,37 @@ Thus, the program was implemented and executed successfully, and the required ou
 
     int main() {
     char ch;
+
+    printf("Enter a character: ");
     scanf("%c", &ch);
 
-    ( (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
-       ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
-      ? printf("Vowel")
-      : (isalpha(ch) 
-         ? printf("Consonant")
-         : (isdigit(ch) 
-            ? printf("Digit")
-            : printf("Special symbol"))));
+    if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+        ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
+
+        printf("Vowel\n");
+
+    } else {
+
+        if (isalpha(ch)) {
+            printf("Consonant\n");
+        } else {
+            if (isdigit(ch)) {
+                printf("Digit\n");
+            } else {
+                printf("Special symbol\n");
+            }
+        }
+    }
 
     return 0;
-    }
+}
+
 
 
 # Output:
-<img width="146" height="71" alt="image" src="https://github.com/user-attachments/assets/ab7b5ed0-1304-4564-85cb-cf864584b82a" />
+<img width="292" height="75" alt="image" src="https://github.com/user-attachments/assets/87fda5f6-b3fa-403e-9fd1-310a51b1b2e8" />
+<img width="297" height="60" alt="image" src="https://github.com/user-attachments/assets/9343b049-35a8-426c-801c-fbc2d4bdddef" />
+<img width="316" height="76" alt="image" src="https://github.com/user-attachments/assets/bab29596-d5c8-48fb-a076-11ed3408cc1c" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
