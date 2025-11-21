@@ -43,6 +43,7 @@ To build a C program that prints integer, float,character, and string literals o
 }
 
 # Output:
+<img width="381" height="173" alt="image" src="https://github.com/user-attachments/assets/6f6faa3a-b60d-49c8-aca8-b762bffea8d2" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -251,8 +252,29 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+    #include <stdio.h>
+    #include <ctype.h>
+
+    int main() {
+    char ch;
+    scanf("%c", &ch);
+
+    ( (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+       ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+      ? printf("Vowel")
+      : (isalpha(ch) 
+         ? printf("Consonant")
+         : (isdigit(ch) 
+            ? printf("Digit")
+            : printf("Special symbol"))));
+
+    return 0;
+    }
+
 
 # Output:
+<img width="146" height="71" alt="image" src="https://github.com/user-attachments/assets/ab7b5ed0-1304-4564-85cb-cf864584b82a" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
